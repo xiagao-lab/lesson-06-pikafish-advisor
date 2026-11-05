@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "pikafish-engine-and-network",
+      "local_path": "engines/pikafish",
+      "role": "Xiangqi UCI engine and evaluation network",
+      "upstream": "https://github.com/official-pikafish/Pikafish",
+      "publication": "download-from-upstream-not-redistributed"
+    }
+  ]
+}

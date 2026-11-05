@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xiagao-lesson-06-pikafish-advisor"
+version = "0.1.0"
+description = "虾搞象棋第 6 课：FEN、Pikafish 与中文棋谱"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3",
+  "opencv-python-headless>=4.8,<5",
+  "Pillow>=10,<13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
